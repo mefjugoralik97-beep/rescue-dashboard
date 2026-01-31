@@ -1,0 +1,14 @@
+{
+  "name": "rescue-dashboard",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "backend",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev:dispatcher": "npm --workspace apps/dispatcher-web dev",
+    "dev:team": "npm --workspace apps/team-pwa dev",
+    "dev:backend": "npm --workspace backend start:dev"
+  }
+}
